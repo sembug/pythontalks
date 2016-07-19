@@ -12,9 +12,9 @@
 * peewee
 
 ## Must have:
-Tests
-Published in Open-Shift
-Travis-CI
+* Tests
+* Published in Open-Shift
+* Travis-CI
 
 ## Model
 * title = CharField(max_length=255)
