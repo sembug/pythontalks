@@ -1,9 +1,7 @@
 from flask import Flask
-app = Flask('pythontalks')
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
 
-if __name__ == '__main__':
-    app.run()
+app = Flask(__name__)
+app.config.from_object('config.Configuration')
+
+# Here I would set up the cache, a task queue, etc.

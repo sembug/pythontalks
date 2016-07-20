@@ -25,7 +25,6 @@
 * event = CharField(max_length=255)
 * speaker = CharField(max_length=255)
 * date = DateField(default=now)
-* slides-url = CharField(max_length=255)
 
 ## Notes
 * http://docs.peewee-orm.com/en/latest/
