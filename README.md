@@ -1,6 +1,8 @@
 # Python Talks
 > Emberwatch like app
 
+[![Build Status](https://travis-ci.org/sembug/pythontalks.svg?branch=master)](https://travis-ci.org/sembug/pythontalks)
+
 ## Tasks:
 * Script to get videos from YouTube channels and add to database.
 * List the talks in one page.
