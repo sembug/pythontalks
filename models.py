@@ -1,6 +1,9 @@
 import datetime
 from peewee import *
-from app import db
+from flaskapp import app
+
+database = SqliteDatabase('pytalks.db')
+
 
 class BaseModel(Model):
     class Meta:
@@ -13,7 +16,7 @@ class Talk(BaseModel):
     url = CharField(max_length=512)
     event = CharField(max_length=255)
     speaker = CharField(max_length=255)
-    date = DateField(default=now)
+    date = DateField(default=datetime.datetime.now)
 
     def __unicode__(self):
         return self.title
